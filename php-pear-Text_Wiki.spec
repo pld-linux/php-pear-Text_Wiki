@@ -23,7 +23,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Abstracts parsing and rendering rules for Wiki markup in structured
 plain text.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Ta klasa tworzy abstrakcjê regu³ do analizy i renderowania dla
