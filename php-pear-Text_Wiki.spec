@@ -1,14 +1,11 @@
-# ToDo:
-# - pl-ize me (summary/description)
-# - en summary shouldn't be the same as description
 %include	/usr/lib/rpm/macros.php
 %define         _class          Text
 %define         _subclass     	Wiki
 %define		_status		alpha
 %define		_pearname	%{_class}_%{_subclass}
 
-Summary:	%{_pearname} - Abstracts parsing and rendering rules for Wiki markup in structured plain text.
-#Summary(pl):	%{_pearname} -
+Summary:	%{_pearname} - parsing and rendering rules for Wiki markup in structured text
+Summary(pl):	%{_pearname} - regu³y analizy i renderowania dla znaczników Wiki w tek¶cie
 Name:		php-pear-%{_pearname}
 Version:	0.6
 Release:	1
@@ -17,7 +14,7 @@ Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	2a0b6e7dd0568e0bc9246ebefe8f48e8
 Patch0:		%{name}-path_fix.patch
-URL:		http://pear.php.net/package/Class_Subclass/
+URL:		http://pear.php.net/package/Text_Wiki/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
 BuildArch:	noarch
@@ -29,10 +26,11 @@ plain text.
 
 This class has in PEAR status: %{_status}.
 
-#%description -l pl
-#
-#
-#Ta klasa ma w PEAR status: %{_status}.
+%description -l pl
+Ta klasa tworzy abstrakcjê regu³ do analizy i renderowania dla
+znaczników Wiki w czystym tek¶cie z odpowiedni± struktur±.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
