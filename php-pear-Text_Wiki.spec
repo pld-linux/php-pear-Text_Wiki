@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - parsing and rendering rules for Wiki markup in structured text
 Summary(pl):	%{_pearname} - regu³y analizy i renderowania dla znaczników Wiki w tek¶cie
 Name:		php-pear-%{_pearname}
-Version:	0.10
+Version:	0.10.1
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	f9d474ecc42d973a2384569e044f95a5
+# Source0-md5:	836722a526f286c18ca95b163f19615c
 URL:		http://pear.php.net/package/Text_Wiki/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
