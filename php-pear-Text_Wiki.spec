@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          Text
-%define         _subclass     	Wiki
+%define		_class		Text
+%define		_subclass	Wiki
 %define		_status		alpha
 %define		_pearname	%{_class}_%{_subclass}
 
