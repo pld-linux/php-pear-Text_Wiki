@@ -1,0 +1,21 @@
+diff -burN Text_Wiki-0.6.orig/Text_Wiki.php Text_Wiki-0.6/Text_Wiki.php
+--- Text_Wiki-0.6.orig/Text_Wiki.php	2003-12-06 18:31:59.000000000 +0100
++++ Text_Wiki-0.6/Text_Wiki.php	2003-12-06 18:39:56.000000000 +0100
+@@ -18,7 +18,7 @@
+ //
+ // $Id$
+ 
+-require_once 'Text_Wiki/Rule.php';
++require_once 'Text/Wiki/Rule.php';
+ 
+ 
+ /**
+@@ -291,7 +291,7 @@
+     function Text_Wiki($options = array())
+     {
+         // set the default path for 
+-        $this->_default_path = dirname(__FILE__) . '/Text_Wiki/rules/';
++        $this->_default_path = dirname(__FILE__) . '/Wiki/rules/';
+         
+         if (isset($options) && is_array($options)) {
+             foreach ($options as $key => $val) {
