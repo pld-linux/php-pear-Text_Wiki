@@ -1,18 +1,18 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Text
 %define		_subclass	Wiki
-%define		_status		alpha
+%define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - parsing and rendering rules for Wiki markup in structured text
 Summary(pl):	%{_pearname} - regu³y analizy i renderowania dla znaczników Wiki w tek¶cie
 Name:		php-pear-%{_pearname}
-Version:	0.25.0
+Version:	1.0.0
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	0921881a6e8c87fedaac900589775d14
+# Source0-md5:	0ff0ad07409c677f16e267160797c4f6
 URL:		http://pear.php.net/package/Text_Wiki/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
