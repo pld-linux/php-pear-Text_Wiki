@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - parsing and rendering rules for Wiki markup in structured text
 Summary(pl):	%{_pearname} - regu³y analizy i renderowania dla znaczników Wiki w tek¶cie
 Name:		php-pear-%{_pearname}
-Version:	0.7
+Version:	0.8
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	0a7f9b71d6af6780f18d80394f69bb6f
+# Source0-md5:	3512fd577265efc5ff22c07dcad97381
 URL:		http://pear.php.net/package/Text_Wiki/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -40,17 +40,17 @@ mv %{_pearname}-%{version}/docs/{"free links.wiki.txt",free_links.wiki.txt}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/rules
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Rule
 
 install %{_pearname}-%{version}/%{_class}/%{_subclass}.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
 install %{_pearname}-%{version}/%{_class}/%{_subclass}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
-install %{_pearname}-%{version}/%{_class}/%{_subclass}/rules/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/rules
+install %{_pearname}-%{version}/%{_class}/%{_subclass}/Rule/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Rule
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc %{_pearname}-%{version}/{docs,tests}
+%doc %{_pearname}-%{version}/{docs/*,tests}
 %{php_pear_dir}/%{_class}/*.php
 %{php_pear_dir}/%{_class}/%{_subclass}
