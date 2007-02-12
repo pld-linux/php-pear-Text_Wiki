@@ -4,7 +4,7 @@
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - parsing and rendering rules for Wiki markup in structured text
-Summary(pl):	%{_pearname} - regu³y analizy i renderowania dla znaczników Wiki w tek¶cie
+Summary(pl.UTF-8):   %{_pearname} - reguÅ‚y analizy i renderowania dla znacznikÃ³w Wiki w tekÅ›cie
 Name:		php-pear-%{_pearname}
 Version:	1.1.0
 Release:	1
@@ -26,9 +26,9 @@ plain text.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Ta klasa tworzy abstrakcjê regu³ do analizy i renderowania dla
-znaczników Wiki w czystym tek¶cie z odpowiedni± struktur±.
+%description -l pl.UTF-8
+Ta klasa tworzy abstrakcjÄ™ reguÅ‚ do analizy i renderowania dla
+znacznikÃ³w Wiki w czystym tekÅ›cie z odpowiedniÄ… strukturÄ….
 
 Ta klasa ma w PEAR status: %{_status}.
 
